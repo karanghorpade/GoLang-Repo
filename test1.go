@@ -1,15 +1,10 @@
 package main
 
-import (
-	"fmt"
+import "fmt"
 
-)
-func main() {
-	var a int
-	var b int
+func main(){
 
-	fmt.Scan(&a,&b)
-
-	fmt.Print(a,b)
 }
+
+
 
