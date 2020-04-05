@@ -3,27 +3,28 @@ package main
 
 import (
 	"fmt"
+	"math"
 )
 
 func main() {
- 	var n,sl,valley int
-	var s string
- 	fmt.Scan(&n)
+ 	var q int
 
- 	fmt.Scan(&s)
-
- 	for _,v:=range s{
-		if(v=='U'){
-			sl++
-		}else{
-			sl--
-		}
-
-		if(sl==0 && v=='U'){
-			valley++
-		}
+ 	fmt.Scan(&q)
+ 	for i:=0;i<q;i++{
+ 		compute()
 	}
-	fmt.Println(valley)
-
 }
+
+func compute(){
+	var x,y,z float64
+	fmt.Scan(&x,&y,&z)
+	if(math.Abs(z-y)<math.Abs(z-x)){
+		fmt.Println("Cat B")
+	}else if(math.Abs(z-y)>math.Abs(z-x)){
+		fmt.Println("Cat A")
+	}else{
+		fmt.Println("Mouse C")
+	}
+}
+
 
