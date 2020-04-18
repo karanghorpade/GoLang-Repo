@@ -2,12 +2,10 @@ package main
 
 import (
 	"fmt"
+	//"sort"
 )
 
-func main() {
-		a :=0
-		b:=2
-		c:=a%b
-		fmt.Println(c)
+func main(){
+
 
 }
